@@ -15,7 +15,11 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
+
+import HomeIcon from '@material-ui/icons/Home';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
+import LaptopChromebookIcon from '@material-ui/icons/LaptopChromebook';
 import MailIcon from '@material-ui/icons/Mail';
 
 const drawerWidth = 240;
@@ -144,13 +148,33 @@ export default function MiniDrawer() {
           </IconButton>
         </div>
         <Divider />
-        <List>
-          {['HOME','自己紹介', 'スキル', '成果物','お問い合わせ'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+         {/* {['HOME','自己紹介', 'スキル', '成果物','お問い合わせ'].map((text, index) => (
+           <ListItem button key={text}>
+           <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+           <ListItemText primary={text} />
+           </ListItem>
+          ))} */}
+          <List>
+            <ListItem button key={'HOME'}>
+              <ListItemIcon><HomeIcon /></ListItemIcon>
+              <ListItemText primary='HOME' />
             </ListItem>
-          ))}
+            <ListItem button key={'自己紹介'}>
+              <ListItemIcon><AccountCircleIcon /></ListItemIcon>
+              <ListItemText primary='自己紹介' />
+            </ListItem>
+            <ListItem button key={'スキル'}>
+              <ListItemIcon><FitnessCenterIcon /></ListItemIcon>
+              <ListItemText primary='スキル' />
+            </ListItem>
+            <ListItem button key={'成果物'}>
+              <ListItemIcon><LaptopChromebookIcon /></ListItemIcon>
+              <ListItemText primary='成果物' />
+            </ListItem>
+            <ListItem button key={'お問い合わせ'}>
+              <ListItemIcon><MailIcon /></ListItemIcon>
+              <ListItemText primary='お問い合わせ&SNS' />
+            </ListItem>
         </List>
        {/* <Divider />
         <List>
