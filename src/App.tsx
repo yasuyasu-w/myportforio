@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import MyAppBar from './AppBar'
+import MiniDrawer from './MiniDrawer'
 
 
 function App() {
   return (
-    <MyAppBar />
+    <MiniDrawer />
   );
 }
 
