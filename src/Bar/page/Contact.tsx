@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Contact(){
     return(
-        <div>オトイアワセ</div>
+        <div>お問い合わせ</div>
     )
 }

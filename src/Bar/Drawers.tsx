@@ -48,8 +48,9 @@ const useStyles = makeStyles((theme: Theme) =>
     toolbar: {
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'flex-end',
+      justifyContent: 'space-between',
       padding: theme.spacing(0, 1),
+      fontSize:20,
       // necessary for content to be below app bar
       ...theme.mixins.toolbar,
     }
@@ -75,6 +76,7 @@ const Drawers=({open,handleDrawerClose})=>{
           }}
       >
         <div className={classes.toolbar}>
+        <div>MENU</div>
           <IconButton onClick={handleDrawerClose}>
             {//theme.direction === 'rtl' ? <ChevronRightIcon /> : 
             <ChevronLeftIcon />
