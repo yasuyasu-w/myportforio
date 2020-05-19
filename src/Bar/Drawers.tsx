@@ -61,6 +61,12 @@ const useStyles = makeStyles((theme: Theme) =>
 const Drawers=({open,handleDrawerClose})=>{
   const classes = useStyles()
   const history=useHistory()
+
+  const PushAndClose=(path:string)=>{
+    handleDrawerClose()
+    history.push(path)
+  }
+
     return(
         <Drawer
         variant="permanent"
@@ -85,23 +91,23 @@ const Drawers=({open,handleDrawerClose})=>{
         </div>
         <Divider />
           <List>
-            <ListItem button key={'HOME'} onClick={()=>history.push('/')}>
+            <ListItem button key={'HOME'} onClick={()=>PushAndClose('/')}>
               <ListItemIcon><HomeIcon /></ListItemIcon>
               <ListItemText primary='HOME' />
             </ListItem>
-            <ListItem button key={'自己紹介'} onClick={()=>history.push('/profile')}>
+            <ListItem button key={'自己紹介'} onClick={()=>PushAndClose('/profile')}>
               <ListItemIcon><AccountCircleIcon /></ListItemIcon>
               <ListItemText primary='自己紹介' />
             </ListItem>
-            <ListItem button key={'スキル'} onClick={()=>history.push('/skill')}>
+            <ListItem button key={'スキル'} onClick={()=>PushAndClose('/skill')}>
               <ListItemIcon><FitnessCenterIcon /></ListItemIcon>
               <ListItemText primary='スキル' />
             </ListItem>
-            <ListItem button key={'成果物'} onClick={()=>history.push('/product')}>
+            <ListItem button key={'成果物'} onClick={()=>PushAndClose('/product')}>
               <ListItemIcon><LaptopChromebookIcon /></ListItemIcon>
               <ListItemText primary='成果物' />
             </ListItem>
-            <ListItem button key={'お問い合わせ'} onClick={()=>history.push('/contact')}>
+            <ListItem button key={'お問い合わせ'} onClick={()=>PushAndClose('/contact')}>
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary='お問い合わせ&SNS' />
             </ListItem>
