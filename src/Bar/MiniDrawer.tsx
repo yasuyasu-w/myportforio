@@ -13,6 +13,7 @@ import Home from './page/Home'
 import Profile from './page/Profile'
 import Skill from './page/Skill'
 import Product from './page/Product'
+import MusicCollection from './page/ProductContent/MusicCollection'
 import Contact from './page/Contact'
 
 
@@ -82,6 +83,9 @@ export default function MiniDrawer() {
         </Route>
         <Route path="/product" exact>
         <Product />
+        </Route>
+        <Route path='/musiccollection' exact>
+          <MusicCollection />
         </Route>
         <Route path="/contact" exact>
         <Contact />
