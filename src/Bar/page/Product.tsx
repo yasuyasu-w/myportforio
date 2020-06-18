@@ -57,7 +57,7 @@ export default function Product(){
          </CardActionArea>
          <CardActions className={classes.cardActions}>
            <Button size="small" color="primary" onClick={()=>history.push(`/musiccollection`)} >
-               詳細について
+           <b><u>詳細はこちら</u></b>
            </Button>
          </CardActions>
        </Card>

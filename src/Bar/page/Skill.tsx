@@ -19,7 +19,7 @@ const useStyles = makeStyles(() =>
         marginTop:'10vh'
     },
     gridItem:{
-        maxWidth: '50%',
+        minWidth:'430px',
         flexBasis: '50%'
     },
     paper: {
@@ -59,7 +59,7 @@ export default function Skill(){
 
         <Typography variant='h3' className={classes.title} >Skills</Typography>
 
-        <Grid container className={classes.GridContainer} justify="center" spacing={2} >
+        <Grid container className={classes.GridContainer} justify="center" spacing={4} >
             <Grid item className={classes.gridItem} >
               <Paper className={classes.paper} >
                   <Grid container className={classes.gridInnerContainer} >
