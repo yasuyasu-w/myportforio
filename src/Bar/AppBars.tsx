@@ -13,6 +13,7 @@ const drawerWidthApp = 240;
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     appBar: {
+      background: '#1F1A58',
       zIndex: theme.zIndex.modal+1 , 
       transition: theme.transitions.create(['width','margin' ], {
         easing: theme.transitions.easing.sharp,
@@ -59,7 +60,7 @@ const AppBars=({open,handleDrawerOpen})=>{
          <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            渡邉靖紋のポートフォリオ
+            Yasufumi Watanabe's Portforio
           </Typography>
         </Toolbar>
       </AppBar>

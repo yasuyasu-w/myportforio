@@ -10,6 +10,7 @@ const useStyles = makeStyles(() =>
        
     },
     title:{
+        fontFamily:'Shadows Into Light,cursive',
         textAlign:'center'
     },
     abator:{
@@ -32,7 +33,7 @@ export default function Profile(){
         <>
         <div>プロフィール</div>
         <div className={classes.root}>
-        <Typography variant='h3' className={classes.title} >自己紹介</Typography>  
+        <Typography variant='h3' className={classes.title} >Profile</Typography>  
         <Avatar alt="Remy Sharp" src="" className={classes.abator} />
         <ul style={{marginTop:50,fontSize:20}}>
             <li className={classes.li}>名前:渡邉 靖紋</li>

@@ -9,12 +9,12 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const useStyles = makeStyles(() =>
   createStyles({
     title: {
+        fontFamily:'Shadows Into Light,cursive',
         textAlign:'center',
-
     },
     main:{
         display:'flex',
-        justifyContent:'center'
+        justifyContent:'space-around'
     }
   }),
 );
@@ -26,7 +26,7 @@ export default function Contact(){
         <>
         <div>お問い合わせ</div>
         <div className={classes.title} >
-        <Typography variant='h3'>お問い合わせ</Typography>
+        <Typography className={classes.title} variant='h3'>Contact</Typography>
         <p>問い合わせ等はメールにてご連絡ください。</p>
         </div>
         <div className={classes.main} >

@@ -11,6 +11,7 @@ import './img/pythonicon.png'
 const useStyles = makeStyles(() =>
   createStyles({
     title: {
+        fontFamily:'Shadows Into Light,cursive',
         textAlign:'center'
     },
     GridContainer:{
@@ -56,7 +57,7 @@ export default function Skill(){
         <>
         <div>スキル</div>
 
-        <Typography variant='h3' className={classes.title} >スキル</Typography>
+        <Typography variant='h3' className={classes.title} >Skills</Typography>
 
         <Grid container className={classes.GridContainer} justify="center" spacing={2} >
             <Grid item className={classes.gridItem} >

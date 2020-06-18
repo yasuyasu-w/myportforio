@@ -10,7 +10,8 @@ const useStyles = makeStyles({
         textAlign:'center'
         },
     main:{
-       marginTop:"30vh"
+       marginTop:"30vh",
+       fontFamily:'Shadows Into Light,cursive'
     }
   });
 
@@ -22,8 +23,8 @@ const useStyles = makeStyles({
       <div>HOME</div>
         <div className={classes.root}>
         <Typography variant="h3" gutterBottom className={classes.main} >
-        ようこそ！<br/>
-        ポートフォリオページへ！
+        Welcome to<br/>
+        My  Portforio！
         </Typography>
         </div>
       </>  

@@ -13,6 +13,7 @@ import {useHistory} from 'react-router-dom'
 
 const useStyles = makeStyles({
     title: {
+        fontFamily:'Shadows Into Light,cursive',
         textAlign:'center',
         marginBottom:'50px'
     },
@@ -35,7 +36,7 @@ export default function Product(){
 
     return(
         <>
-        <Typography variant='h3' className={classes.title} >成果物</Typography>
+        <Typography variant='h3' className={classes.title} >Product</Typography>
 
         <Card className={classes.rootCard}>
           <CardActionArea>
