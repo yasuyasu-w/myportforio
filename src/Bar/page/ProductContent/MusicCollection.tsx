@@ -53,6 +53,28 @@ const MusicContent=()=>{
             <h3>概要</h3>
             <p>お気に入りの音楽のメモツール</p>
             </div>
+            <div className={classes.sentence}>
+            <h3>用途・目的</h3>
+            <p>自分の好きな音楽の良さや魅力を言語化しておくことで、
+                後で見返したときにコレクションとして眺め、好きな音楽に対する
+                理解や感動できるようにするため</p>
+            </div>
+            <div className={classes.sentence}>
+            <h3>こだわり</h3>
+            <p>1.一度書いた内容についての良さを、イチオシとして直感的に把握できる。<br/>
+               2.アーティスト写真を貼り付けることができ、視覚的にわかりやすいものとしている。<br/>
+               3.書いたコンテンツが追加、または編集順に並び替えられ、書いた時刻が示されている。</p>
+            </div>
+            <div className={classes.sentence}>
+            <h3>使用言語、フレームワーク等</h3>
+            <p>React×Reduxを用いて開発し、firebaseのhosting機能を用いて公開した。</p>
+            </div>
+            <div className={classes.sentence}>
+            <h3>課題</h3>
+            <p>1.appleやspotify等のapiを用いて音楽を視聴できるようにすること。<br/>
+               2.他のアプリで投稿できるようにしたり、他の人と共有できる機能を実装すること。 
+            </p>
+            </div>
         </div>
         </>
     )
