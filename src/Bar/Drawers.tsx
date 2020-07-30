@@ -7,15 +7,17 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 //import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+//import ListItem from '@material-ui/core/ListItem';
+//import ListItemIcon from '@material-ui/core/ListItemIcon';
+//import ListItemText from '@material-ui/core/ListItemText';
 
-import HomeIcon from '@material-ui/icons/Home';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
-import LaptopChromebookIcon from '@material-ui/icons/LaptopChromebook';
-import MailIcon from '@material-ui/icons/Mail';
+//import HomeIcon from '@material-ui/icons/Home';
+//import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+//import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
+//import LaptopChromebookIcon from '@material-ui/icons/LaptopChromebook';
+//import MailIcon from '@material-ui/icons/Mail';
+
+import {HomepageIcon,ProfileIcon,SkillsIcon,ProductIcon,ContactIcon} from './MenuIcons/index'
 
 import {useHistory} from 'react-router-dom'
 
@@ -98,7 +100,7 @@ const Drawers=({open,setOpen})=>{
         </div>
         <Divider />
           <List>
-            <ListItem button key={'HOME'} onClick={()=>PushAndClose('/')}>
+            {/*<ListItem button key={'HOME'} onClick={()=>PushAndClose('/')}>
               <ListItemIcon><HomeIcon /></ListItemIcon>
               <ListItemText primary='HOME' />
             </ListItem>
@@ -117,7 +119,12 @@ const Drawers=({open,setOpen})=>{
             <ListItem button key={'お問い合わせ'} onClick={()=>PushAndClose('/contact')}>
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary='お問い合わせ&SNS' />
-            </ListItem>
+          </ListItem>*/}
+          <HomepageIcon PushAndClose={PushAndClose}  />
+          <ProfileIcon PushAndClose={PushAndClose}  />
+          <SkillsIcon PushAndClose={PushAndClose}  />
+          <ProductIcon PushAndClose={PushAndClose}  />
+          <ContactIcon PushAndClose={PushAndClose}  />
         </List>
           </Drawer> 
     )

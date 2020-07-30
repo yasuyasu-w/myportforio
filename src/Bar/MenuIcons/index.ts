@@ -1,0 +1,5 @@
+export {default as HomepageIcon} from './HomePageIcon'
+export {default as ProfileIcon} from './ProfileIcon'
+export {default as ProductIcon} from './ProductIcon'
+export {default as SkillsIcon} from './SkillsIcon'
+export {default as ContactIcon} from './ContactIcon'
