@@ -38,8 +38,13 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 
-const AppBars=({open,handleDrawerOpen})=>{
+const AppBars=({open,setOpen})=>{
     const classes = useStyles();
+
+    const handleDrawerOpen = () => {
+         setOpen(true);
+       };
+
     return(
         <AppBar
         position="fixed"

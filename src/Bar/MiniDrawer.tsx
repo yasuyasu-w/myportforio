@@ -47,13 +47,7 @@ export default function MiniDrawer() {
 
 
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
 
   
 
@@ -64,9 +58,9 @@ export default function MiniDrawer() {
     <div className={classes.root}>
       <CssBaseline />
 
-      <AppBars open={open} handleDrawerOpen={handleDrawerOpen} />
+      <AppBars open={open} setOpen={setOpen} />
 
-      <Drawers open={open} handleDrawerClose={handleDrawerClose} />
+      <Drawers open={open} setOpen={setOpen} />
    
 
       <main className={classes.content}>

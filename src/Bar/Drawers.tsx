@@ -58,9 +58,13 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 
-const Drawers=({open,handleDrawerClose})=>{
+const Drawers=({open,setOpen})=>{
   const classes = useStyles()
   const history=useHistory()
+
+  const handleDrawerClose = () => {
+       setOpen(false);
+     };
 
   const PushAndClose=(path:string)=>{
     handleDrawerClose()
