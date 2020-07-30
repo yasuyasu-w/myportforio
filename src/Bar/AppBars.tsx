@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     menuButton: {
       marginRight: 36,
+      '@media (min-width: 600px)': {
+        display: 'none'
+      }
     },
     hide: {
       display: 'none',
