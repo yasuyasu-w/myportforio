@@ -10,7 +10,7 @@ import HomeIcon from '@material-ui/icons/Home';
 const HomePageIcon=({PushAndClose})=>{
 
     return (
-        <ListItem button key={'HOME'} onClick={()=>PushAndClose('/')}>
+        <ListItem button key={'HOME'} onClick={()=>PushAndClose('/')} >
               <ListItemIcon><HomeIcon /></ListItemIcon>
               <ListItemText primary='HOME' />
         </ListItem>

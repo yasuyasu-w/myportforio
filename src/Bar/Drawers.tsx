@@ -6,20 +6,11 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-//import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-//import ListItem from '@material-ui/core/ListItem';
-//import ListItemIcon from '@material-ui/core/ListItemIcon';
-//import ListItemText from '@material-ui/core/ListItemText';
 
-//import HomeIcon from '@material-ui/icons/Home';
-//import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-//import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
-//import LaptopChromebookIcon from '@material-ui/icons/LaptopChromebook';
-//import MailIcon from '@material-ui/icons/Mail';
+//import {HomepageIcon,ProfileIcon,SkillsIcon,ProductIcon,ContactIcon} from './MenuIcons/index'
+import AllIcon from './MenuIcons/AllIcon'
 
-import {HomepageIcon,ProfileIcon,SkillsIcon,ProductIcon,ContactIcon} from './MenuIcons/index'
-
-import {useHistory} from 'react-router-dom'
+//import {useHistory} from 'react-router-dom'
 
 const drawerWidthcopy = 240;
 const useStyles = makeStyles((theme: Theme) =>
@@ -65,16 +56,16 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Drawers=({open,setOpen})=>{
   const classes = useStyles()
-  const history=useHistory()
+  //const history=useHistory()
 
   const handleDrawerClose = () => {
        setOpen(false);
      };
 
-  const PushAndClose=(path:string)=>{
-    handleDrawerClose()
-    history.push(path)
-  }
+  //const PushAndClose=(path:string)=>{
+  //  handleDrawerClose()
+  //  history.push(path)
+  //}
 
     return(
         <Drawer
@@ -100,31 +91,12 @@ const Drawers=({open,setOpen})=>{
         </div>
         <Divider />
           <List>
-            {/*<ListItem button key={'HOME'} onClick={()=>PushAndClose('/')}>
-              <ListItemIcon><HomeIcon /></ListItemIcon>
-              <ListItemText primary='HOME' />
-            </ListItem>
-            <ListItem button key={'自己紹介'} onClick={()=>PushAndClose('/profile')}>
-              <ListItemIcon><AccountCircleIcon /></ListItemIcon>
-              <ListItemText primary='自己紹介' />
-            </ListItem>
-            <ListItem button key={'スキル'} onClick={()=>PushAndClose('/skill')}>
-              <ListItemIcon><FitnessCenterIcon /></ListItemIcon>
-              <ListItemText primary='スキル' />
-            </ListItem>
-            <ListItem button key={'成果物'} onClick={()=>PushAndClose('/product')}>
-              <ListItemIcon><LaptopChromebookIcon /></ListItemIcon>
-              <ListItemText primary='成果物' />
-            </ListItem>
-            <ListItem button key={'お問い合わせ'} onClick={()=>PushAndClose('/contact')}>
-              <ListItemIcon><MailIcon /></ListItemIcon>
-              <ListItemText primary='お問い合わせ&SNS' />
-          </ListItem>*/}
-          <HomepageIcon PushAndClose={PushAndClose}  />
+          {/*<HomepageIcon PushAndClose={PushAndClose}  />
           <ProfileIcon PushAndClose={PushAndClose}  />
           <SkillsIcon PushAndClose={PushAndClose}  />
           <ProductIcon PushAndClose={PushAndClose}  />
-          <ContactIcon PushAndClose={PushAndClose}  />
+          <ContactIcon PushAndClose={PushAndClose}  />*/}
+          <AllIcon handleDrawerClose={handleDrawerClose} />
         </List>
           </Drawer> 
     )

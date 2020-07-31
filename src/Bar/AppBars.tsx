@@ -7,6 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import AllIcon from './MenuIcons/AllIcon'
+
+
+
+//import {HomepageIcon,ProfileIcon,SkillsIcon,ProductIcon,ContactIcon} from './MenuIcons/index'
+
+
 
 const drawerWidthApp = 240;
 
@@ -37,6 +44,12 @@ const useStyles = makeStyles((theme: Theme) =>
     hide: {
       display: 'none',
     },
+    menuIcon:{
+      display:'flex',
+      '@media (max-width: 600px)': {
+          display: 'none'
+        }
+    }
   }),
 );
 
@@ -70,6 +83,10 @@ const AppBars=({open,setOpen})=>{
           <Typography variant="h6" noWrap>
             Yasufumi Watanabe's Portforio
           </Typography>
+
+          <div className={classes.menuIcon} >
+          <AllIcon />
+          </div>
         </Toolbar>
       </AppBar>
     )

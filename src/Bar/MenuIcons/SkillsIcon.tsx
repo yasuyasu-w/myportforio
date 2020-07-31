@@ -8,7 +8,7 @@ import FitnessCenterIcon from '@material-ui/icons/FitnessCenter'
 const SkillsIcon=({PushAndClose})=>{
 
     return (
-        <ListItem button key={'スキル'} onClick={()=>PushAndClose('/skill')}>
+        <ListItem button key={'スキル'} onClick={()=>PushAndClose('/skill')} >
               <ListItemIcon><FitnessCenterIcon /></ListItemIcon>
               <ListItemText primary='スキル' />
         </ListItem>

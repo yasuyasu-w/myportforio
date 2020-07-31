@@ -9,7 +9,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 const ProfileIcon=({PushAndClose})=>{
 
     return (
-        <ListItem button key={'自己紹介'} onClick={()=>PushAndClose('/profile')}>
+        <ListItem button key={'自己紹介'} onClick={()=>PushAndClose('/profile')} >
               <ListItemIcon><AccountCircleIcon /></ListItemIcon>
               <ListItemText primary='自己紹介' />
         </ListItem>
